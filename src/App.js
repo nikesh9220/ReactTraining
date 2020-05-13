@@ -30,6 +30,7 @@ class App extends Component {
         return p.id === personIndex
     });
     debugger;
+    
     const _person = {
       ...this.state.persons[_personIndex] //Copy object using spread operator
     }
@@ -60,7 +61,16 @@ deleteNameHandler = (personIndex) =>{
     persons:_persons
   })
 }
+
   render () {
+    const style = {
+      backgroundColor: 'green',
+      color: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    };
     let persons = null;
     if(this.state.showName){
         persons= 
@@ -73,20 +83,21 @@ deleteNameHandler = (personIndex) =>{
           }
         
         </div> 
+        style.backgroundColor = 'red';
         
     }
-    const style = {
-      backgroundColor: 'white',
-      font: 'inherit',
-      border: '1px solid blue',
-      padding: '8px',
-      cursor: 'pointer'
-    };
-
+    let classes = [];
+    if(this.state.persons.length <=2){
+      classes.push('red')
+    }
+    
+    if(this.state.persons.length <=1){
+      classes.push('bold')
+    }
     return (
       <div className="App">
         <h1>Hi, I'm a React App</h1>
-        <p>This is really working!</p>
+        <p className={classes.join(' ')}>This is really working!</p>
         <button 
           style={style}
           onClick={this.toggleNameHandler}>Toggle Name</button>

@@ -1,4 +1,11 @@
 This Repository contain solution of below problem statements.
+<hr/>
+Date 13 May 2020
+<ol>
+    <li>Styling the React Component</li>
+    <li>Dynamic Styling to component</li>
+</ol>
+
 Date 11 May 2020
 <ol>
     <li>Working With List and Conditions</li>

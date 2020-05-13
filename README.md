@@ -1,9 +1,14 @@
-This Repository contain solution of below problem statements.
+This Repository contain content of React Trainig Sessions.
+In this training below content was coverd.
 <hr/>
 Date 13 May 2020
+#Styling using third party package Radium
+#Install it by npm install --save radium
 <ol>
     <li>Styling the React Component</li>
     <li>Dynamic Styling to component</li>
+    <li>styling using Radium</li>
+    
 </ol>
 
 Date 11 May 2020

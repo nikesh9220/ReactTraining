@@ -4,6 +4,8 @@ In this training below content was coverd.
 Date 13 May 2020
 #Styling using third party package Radium
 #Install it by npm install --save radium
+Styled Components (third party)
+#npm install --save styled-components
 <ol>
     <li>Styling the React Component</li>
     <li>Dynamic Styling to component</li>

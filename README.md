@@ -11,6 +11,8 @@ Styled Components (third party)
     <li>Dynamic Styling to component</li>
     <li>styling using Radium</li>
     <li>Media Query using Radium</li>
+    <li>Style using Styled Components</li>
+    <li>Dynamic Style using Styled Components</li>
     
 </ol>
 

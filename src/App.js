@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import styled from 'styled-components'
 import Person from './Person/Person';
 
-const StyledButton = styled.button`
-  background-color: ${props => props.alt ? 'red': 'green'};
-  color: white;
-  font: inherit;
-  border: 1px solid blue;
-  padding: 8px;
-  cursor: pointer;
-  &:hover {
-      background-color:${props => props.alt ? 'salmon': 'lightgreen'};
-      color:black;
-  }
-`;
+
 class App extends Component {
  
   state = {
@@ -109,9 +97,9 @@ deleteNameHandler = (personIndex) =>{
        <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(' ')}>This is really working!</p>
-        <StyledButton
-          alt={this.state.showName}
-          onClick={this.toggleNameHandler}>Toggle Name</StyledButton>
+        <button
+         
+          onClick={this.toggleNameHandler}>Toggle Name</button>
 
       {persons}
         

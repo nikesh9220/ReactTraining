@@ -13,7 +13,7 @@ Styled Components (third party)
     <li>Media Query using Radium</li>
     <li>Style using Styled Components</li>
     <li>Dynamic Style using Styled Components</li>
-    
+    <li>Styling using CSS Modules.</li>
 </ol>
 
 Date 11 May 2020

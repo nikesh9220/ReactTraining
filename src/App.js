@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 
 
@@ -13,7 +13,7 @@ class App extends Component {
     ],
     otherState: 'some other value'
   }
-
+  
   // switchNameHandler = (newName) => {
   //   // console.log('Was clicked!');
   //   // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
@@ -67,6 +67,7 @@ deleteNameHandler = (personIndex) =>{
   render () {
    
     let persons = null;
+    let buttonClass = '';
     if(this.state.showName){
         persons= 
         <div>
@@ -78,27 +79,28 @@ deleteNameHandler = (personIndex) =>{
           }
         
         </div> 
+        buttonClass = classes.Red;
         // style.backgroundColor = 'red';
         // style[":hover"] ={
         //   backgroundColor:'salmon',
         //   color:'black'
         // }
     }
-    let classes = [];
+    let assignedClasses = [];
     if(this.state.persons.length <=2){
-      classes.push('red')
+      assignedClasses.push(classes.red)
     }
     
     if(this.state.persons.length <=1){
-      classes.push('bold')
+      assignedClasses.push(classes.bold)
     }
     return (
    
-       <div className="App">
+       <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
-        <p className={classes.join(' ')}>This is really working!</p>
+        <p className={assignedClasses.join(' ')}>This is really working!</p>
         <button
-         
+         className={buttonClass}
           onClick={this.toggleNameHandler}>Toggle Name</button>
 
       {persons}

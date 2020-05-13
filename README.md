@@ -8,6 +8,7 @@ Date 13 May 2020
     <li>Styling the React Component</li>
     <li>Dynamic Styling to component</li>
     <li>styling using Radium</li>
+    <li>Media Query using Radium</li>
     
 </ol>
 

@@ -17,6 +17,10 @@ const person = ( props ) => {
     //   '@media (min-width : 500px)': {
     //     width: '450px'      }
     // }
+    const random = Math.random();
+    if(random > 0.7){
+        throw new Error('Uppppppps!');
+    }
     return (
           <div className={cls.Person}>
             <p onClick={props.click}>I'm {props.name} and I am {props.age} years old!</p>

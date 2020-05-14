@@ -1,6 +1,15 @@
 This Repository contain content of React Trainig Sessions.
 In this training below content was coverd.
-<hr/>
+<br/>
+Date 14 May 2020
+<ol>
+<li>Debugging React App</li>
+<li>Dppe Drive into React Component and React Internals</li>
+<li>Project Structure</li>
+<li>Class based Vs Functional Components</li>
+<li>Stateless and Stateful component</li>
+<li>Component Life Cycles</li>
+</ol>
 Date 13 May 2020
 #Styling using third party package Radium
 #Install it by npm install --save radium

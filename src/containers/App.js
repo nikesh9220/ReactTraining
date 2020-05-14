@@ -4,7 +4,10 @@ import Persons from '../components/Persons/Persons'
 import Cockpit from '../components/Cockpit/Cockpit';
 
 class App extends Component {
- 
+ constructor(props){
+   super(props)
+   console.log('[App Js] Costructor')
+ }
   state = {
     persons: [
       { id:'N1', name: 'Max', age: 28 },
@@ -12,6 +15,10 @@ class App extends Component {
       { id:'N3', name: 'Stephanie', age: 26 }
     ],
     otherState: 'some other value'
+  }
+  static getDerivedStateFromProps(props,state){
+    console.log('[App Js] getDerivedStateFromProps',props )
+    return state;
   }
   
   nameChangedHandler = (event,personIndex) => {
@@ -52,6 +59,7 @@ deleteNameHandler = (personIndex) =>{
 }
 
   render () {
+    console.log('[App js] render.')
     let persons = null;
      if(this.state.showName){
        debugger;
@@ -70,6 +78,7 @@ deleteNameHandler = (personIndex) =>{
       persons= {this.state.persons}
       cclick={this.toggleNameHandler}
       buttonChange={this.state.showName}
+      appTitle={this.props.appTitle}
       ></Cockpit>
       {persons}
         

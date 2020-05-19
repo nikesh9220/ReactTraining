@@ -1,6 +1,14 @@
-This Repository contain content of React Trainig Sessions.
+This Repository contains content of React Trainig Sessions.
 In this training below content was coverd.
 <br/>
+Date 17/18 May 2020
+<ol>
+<li>Internal working of Component</li>
+<li>Lifecycle Hooks</li>
+<li>React Fragment</li>
+<li>Higher Order Component. </li>
+
+</ol>
 Date 14 May 2020
 <ol>
 <li>Debugging React App</li>
@@ -10,7 +18,7 @@ Date 14 May 2020
 <li>Stateless and Stateful component</li>
 <li>Component Life Cycles</li>
 </ol>
-Date 13 May 2020
+Date 13 May 2020 <br/>
 #Styling using third party package Radium
 #Install it by npm install --save radium
 Styled Components (third party)
